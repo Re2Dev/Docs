@@ -1,10 +1,20 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Security</title>
+  <title>Automatic redirection through language detection</title>
 </head>
 <body>
-<p>This page is still under construction...</p>
+<p>Automatic redirection through language detection</p>
+<script>
+  let sprache = navigator.language;
+
+  if(sprache === "de" || sprache === "de-DE" || sprache === "de-AT" || sprache === "de-CH") {
+    window.location.replace("https://re2dev.github.io/Docs/de/Security/");
+  } else {
+    window.location.replace("https://re2dev.github.io/Docs/en/Security/");
+  }
+
+</script>
 </body>
 </html>
